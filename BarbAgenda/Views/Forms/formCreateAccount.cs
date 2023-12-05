@@ -29,7 +29,7 @@ namespace BarbAgenda.Views
             if (txtUsername.Text == "" && txtPassword.Text == "" && txtConfPassword.Text == "")
             {
                 MessageBox.Show("Use" +
-                    "Nome do usuário e senha estão vazios.", "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    "Nome do usuário e senha estão vazios.", "Falha no Registro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (txtPassword.Text == txtConfPassword.Text)
             {
@@ -44,7 +44,7 @@ namespace BarbAgenda.Views
                 }
                 else
                 {
-                    MessageBox.Show("Error ao criar conta", "Falha no cadastro.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Erro ao criar conta", "Falha no cadastro.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else

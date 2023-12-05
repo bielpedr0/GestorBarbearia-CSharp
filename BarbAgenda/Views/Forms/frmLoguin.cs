@@ -28,7 +28,7 @@ namespace BarbAgenda.Views
 
             if (!usuarioPossuiLogin)
             {
-                MessageBox.Show("Invalid Username or Password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuário ou Senha Inválidos, Tente Novamente", "Falha no Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ClearTextBox();
                 txtUsername.Focus();
                 con.Close();

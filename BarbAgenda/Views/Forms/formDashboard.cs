@@ -135,5 +135,10 @@ namespace BarbAgenda.Views
             dataGridViewRelatorioAgendamento.DataSource = dataTable;
             dataGridViewRelatorioAgendamento.Columns["Id"].Visible = false;
         }
+
+        private void formDashboard_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

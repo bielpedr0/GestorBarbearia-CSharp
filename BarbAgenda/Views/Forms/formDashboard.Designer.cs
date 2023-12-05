@@ -132,6 +132,7 @@
             Margin = new Padding(5);
             Name = "formDashboard";
             Text = "formDashboard";
+            Load += formDashboard_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridViewRelatorioAgendamento).EndInit();
             ResumeLayout(false);
             PerformLayout();

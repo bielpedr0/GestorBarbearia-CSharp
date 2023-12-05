@@ -259,7 +259,7 @@ namespace BarbAgenda.Views
         {
             txbCPF.Text = cliente.Cpf;
             txbNome.Text = cliente.Nome;
-            txbTelefone.Text = cliente.Email;
+            txbTelefone.Text = cliente.Telefone;
             txbEmail.Text = cliente.Email;
         }
 

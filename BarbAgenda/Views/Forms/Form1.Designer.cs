@@ -102,6 +102,7 @@
             // btnMenu
             // 
             btnMenu.Cursor = Cursors.Hand;
+            btnMenu.Image = Properties.Resources.menu;
             btnMenu.Location = new Point(30, 41);
             btnMenu.Margin = new Padding(5, 4, 5, 4);
             btnMenu.Name = "btnMenu";
@@ -126,6 +127,7 @@
             btnHome.FlatStyle = FlatStyle.Flat;
             btnHome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnHome.ForeColor = Color.White;
+            btnHome.Image = Properties.Resources.home_icon_silhouette;
             btnHome.ImageAlign = ContentAlignment.MiddleLeft;
             btnHome.Location = new Point(-17, -13);
             btnHome.Margin = new Padding(5, 4, 5, 4);
@@ -153,6 +155,7 @@
             btnDash.FlatStyle = FlatStyle.Flat;
             btnDash.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnDash.ForeColor = Color.White;
+            btnDash.Image = Properties.Resources.dashboard;
             btnDash.ImageAlign = ContentAlignment.MiddleLeft;
             btnDash.Location = new Point(-17, -17);
             btnDash.Margin = new Padding(5, 4, 5, 4);
@@ -180,6 +183,7 @@
             btnCalendario.FlatStyle = FlatStyle.Flat;
             btnCalendario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCalendario.ForeColor = Color.White;
+            btnCalendario.Image = Properties.Resources.calendar;
             btnCalendario.ImageAlign = ContentAlignment.MiddleLeft;
             btnCalendario.Location = new Point(-17, -16);
             btnCalendario.Margin = new Padding(5, 4, 5, 4);
@@ -207,6 +211,7 @@
             btnCadastro.FlatStyle = FlatStyle.Flat;
             btnCadastro.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCadastro.ForeColor = Color.White;
+            btnCadastro.Image = Properties.Resources.verify;
             btnCadastro.ImageAlign = ContentAlignment.MiddleLeft;
             btnCadastro.Location = new Point(-17, -13);
             btnCadastro.Margin = new Padding(5, 4, 5, 4);
@@ -234,6 +239,7 @@
             btnAgendamento.FlatStyle = FlatStyle.Flat;
             btnAgendamento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnAgendamento.ForeColor = Color.White;
+            btnAgendamento.Image = Properties.Resources.agendar__1_;
             btnAgendamento.ImageAlign = ContentAlignment.MiddleLeft;
             btnAgendamento.Location = new Point(-17, -13);
             btnAgendamento.Margin = new Padding(5, 4, 5, 4);
@@ -270,6 +276,7 @@
             btnSair.FlatStyle = FlatStyle.Flat;
             btnSair.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnSair.ForeColor = Color.White;
+            btnSair.Image = Properties.Resources.logout;
             btnSair.ImageAlign = ContentAlignment.MiddleLeft;
             btnSair.Location = new Point(-17, -8);
             btnSair.Margin = new Padding(5, 4, 5, 4);
