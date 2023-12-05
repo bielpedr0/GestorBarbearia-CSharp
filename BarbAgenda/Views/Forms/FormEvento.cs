@@ -30,6 +30,8 @@ namespace BarbAgenda.Views
 
             string dataSelecionadaText = new DateTime(year, month, day).ToString("dd/MM/yyyy");
 
+            txbData.Text = dataSelecionadaText;
+
             // Obter agendamentos do dia selecionado usando o AgendamentoRepository
             DateTime dataSelecionada;
             string[] formatosData = { "dd/MM/yyyy" };
