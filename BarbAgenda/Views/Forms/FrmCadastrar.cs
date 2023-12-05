@@ -51,7 +51,7 @@ namespace BarbAgenda.Views.Forms
                 MessageBox.Show("Insira um valor para o campo \"Nome\"");
                 return;
             }
-            
+
             string telefone = txbTelefone.Text.Trim();
             if (cpf == "")
             {
@@ -86,7 +86,7 @@ namespace BarbAgenda.Views.Forms
             MessageBox.Show("Cliente cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             _frmCadastro.AtualizarGrid();
-            this.Close();          
+            this.Close();
         }
 
 

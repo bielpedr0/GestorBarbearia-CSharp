@@ -14,7 +14,7 @@ namespace BarbAgenda.Infrastructure.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                string connectionString = "Server=localhost;User Id=root;Password=senha123;Database=barb-calendario;";
+                string connectionString = "Server=localhost;User Id=root;Password=159482;Database=barb-calendario;";
                 optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             }
         }

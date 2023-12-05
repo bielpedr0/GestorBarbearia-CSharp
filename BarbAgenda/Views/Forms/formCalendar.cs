@@ -36,8 +36,8 @@ namespace BarbAgenda.Views
             lbData.Text = nomeMes + " " + year;
 
             static_month = month;
-            static_year = year; 
-            
+            static_year = year;
+
 
             //pegando o primeiro dia do mes
             DateTime startofMonth = new DateTime(year, month, 1);
@@ -68,7 +68,7 @@ namespace BarbAgenda.Views
         {
             dayContainer.Controls.Clear();
 
-            month--; 
+            month--;
             static_month = month;
             static_year = year;
 

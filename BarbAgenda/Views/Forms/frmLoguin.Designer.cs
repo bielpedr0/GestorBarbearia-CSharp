@@ -28,173 +28,186 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCreateAccount = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.checkBxShowPass = new System.Windows.Forms.CheckBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            btnCreateAccount = new Label();
+            label5 = new Label();
+            btnClear = new Button();
+            btnLogin = new Button();
+            checkBxShowPass = new CheckBox();
+            txtPassword = new TextBox();
+            label3 = new Label();
+            txtUsername = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            btnFechar = new Button();
+            SuspendLayout();
             // 
             // btnCreateAccount
             // 
-            this.btnCreateAccount.AutoSize = true;
-            this.btnCreateAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCreateAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnCreateAccount.Location = new System.Drawing.Point(88, 393);
-            this.btnCreateAccount.Name = "btnCreateAccount";
-            this.btnCreateAccount.Size = new System.Drawing.Size(104, 17);
-            this.btnCreateAccount.TabIndex = 33;
-            this.btnCreateAccount.Text = "Crie Uma Conta";
-            this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
+            btnCreateAccount.AutoSize = true;
+            btnCreateAccount.Cursor = Cursors.Hand;
+            btnCreateAccount.ForeColor = Color.FromArgb(116, 86, 174);
+            btnCreateAccount.Location = new Point(97, 390);
+            btnCreateAccount.Name = "btnCreateAccount";
+            btnCreateAccount.Size = new Size(136, 23);
+            btnCreateAccount.TabIndex = 33;
+            btnCreateAccount.Text = "Crie Uma Conta";
+            btnCreateAccount.Click += btnCreateAccount_Click;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(68, 366);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(168, 17);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Você Não Tem Uma Conta";
+            label5.AutoSize = true;
+            label5.Location = new Point(77, 363);
+            label5.Name = "label5";
+            label5.Size = new Size(216, 23);
+            label5.TabIndex = 32;
+            label5.Text = "Você Não Tem Uma Conta";
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.White;
-            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnClear.Location = new System.Drawing.Point(37, 318);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(216, 35);
-            this.btnClear.TabIndex = 31;
-            this.btnClear.Text = "LIMPAR";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            btnClear.BackColor = Color.White;
+            btnClear.Cursor = Cursors.Hand;
+            btnClear.FlatStyle = FlatStyle.Flat;
+            btnClear.ForeColor = Color.FromArgb(116, 86, 174);
+            btnClear.Location = new Point(46, 315);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(216, 35);
+            btnClear.TabIndex = 31;
+            btnClear.Text = "LIMPAR";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(37, 264);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(216, 35);
-            this.btnLogin.TabIndex = 30;
-            this.btnLogin.Text = "LOGIN";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            btnLogin.BackColor = Color.FromArgb(116, 86, 174);
+            btnLogin.Cursor = Cursors.Hand;
+            btnLogin.FlatAppearance.BorderSize = 0;
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.ForeColor = Color.White;
+            btnLogin.Location = new Point(46, 261);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(216, 35);
+            btnLogin.TabIndex = 30;
+            btnLogin.Text = "LOGIN";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // checkBxShowPass
             // 
-            this.checkBxShowPass.AutoSize = true;
-            this.checkBxShowPass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBxShowPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBxShowPass.Location = new System.Drawing.Point(134, 228);
-            this.checkBxShowPass.Name = "checkBxShowPass";
-            this.checkBxShowPass.Size = new System.Drawing.Size(113, 21);
-            this.checkBxShowPass.TabIndex = 29;
-            this.checkBxShowPass.Text = "Mostrar Senha";
-            this.checkBxShowPass.UseVisualStyleBackColor = true;
-            this.checkBxShowPass.CheckedChanged += new System.EventHandler(this.checkBxShowPass_CheckedChanged);
+            checkBxShowPass.AutoSize = true;
+            checkBxShowPass.Cursor = Cursors.Hand;
+            checkBxShowPass.FlatStyle = FlatStyle.Flat;
+            checkBxShowPass.Location = new Point(143, 225);
+            checkBxShowPass.Name = "checkBxShowPass";
+            checkBxShowPass.Size = new Size(144, 27);
+            checkBxShowPass.TabIndex = 29;
+            checkBxShowPass.Text = "Mostrar Senha";
+            checkBxShowPass.UseVisualStyleBackColor = true;
+            checkBxShowPass.CheckedChanged += checkBxShowPass_CheckedChanged;
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(37, 194);
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(216, 28);
-            this.txtPassword.TabIndex = 28;
+            txtPassword.BackColor = Color.FromArgb(230, 231, 233);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("MS UI Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Location = new Point(46, 191);
+            txtPassword.Multiline = true;
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(216, 28);
+            txtPassword.TabIndex = 28;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 174);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 17);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Senha";
+            label3.AutoSize = true;
+            label3.Location = new Point(43, 171);
+            label3.Name = "label3";
+            label3.Size = new Size(58, 23);
+            label3.TabIndex = 27;
+            label3.Text = "Senha";
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(37, 124);
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(216, 28);
-            this.txtUsername.TabIndex = 26;
+            txtUsername.BackColor = Color.FromArgb(230, 231, 233);
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.Font = new Font("MS UI Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.Location = new Point(46, 121);
+            txtUsername.Multiline = true;
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(216, 28);
+            txtUsername.TabIndex = 26;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 17);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Usuário";
+            label2.AutoSize = true;
+            label2.Location = new Point(43, 101);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 23);
+            label2.TabIndex = 25;
+            label2.Text = "Usuário";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(32, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 27);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "BarbAgenda";
+            label1.AutoSize = true;
+            label1.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(116, 86, 174);
+            label1.Location = new Point(46, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(197, 34);
+            label1.TabIndex = 24;
+            label1.Text = "BarbAgenda";
+            // 
+            // btnFechar
+            // 
+            btnFechar.ForeColor = Color.FromArgb(116, 86, 174);
+            btnFechar.Location = new Point(12, 474);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(119, 29);
+            btnFechar.TabIndex = 34;
+            btnFechar.Text = "Fechar Tudo";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
             // 
             // frmLoguin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(289, 489);
-            this.Controls.Add(this.btnCreateAccount);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.checkBxShowPass);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmLoguin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLoguin";
-            this.Load += new System.EventHandler(this.frmLoguin_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 21F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(35, 40, 45);
+            ClientSize = new Size(313, 515);
+            Controls.Add(btnFechar);
+            Controls.Add(btnCreateAccount);
+            Controls.Add(label5);
+            Controls.Add(btnClear);
+            Controls.Add(btnLogin);
+            Controls.Add(checkBxShowPass);
+            Controls.Add(txtPassword);
+            Controls.Add(label3);
+            Controls.Add(txtUsername);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            ForeColor = Color.FromArgb(164, 165, 169);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
+            Name = "frmLoguin";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmLoguin";
+            Load += frmLoguin_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Label btnCreateAccount;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.CheckBox checkBxShowPass;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private Label btnCreateAccount;
+        private Label label5;
+        private Button btnClear;
+        private Button btnLogin;
+        private CheckBox checkBxShowPass;
+        private TextBox txtPassword;
+        private Label label3;
+        private TextBox txtUsername;
+        private Label label2;
+        private Label label1;
+        private Button btnFechar;
     }
 }

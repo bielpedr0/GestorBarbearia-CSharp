@@ -270,7 +270,7 @@ namespace BarbAgenda.Views
             clienteRepository.GerarRelatorioCliente(dataTable);
         }
 
-       
+
 
     }
 }
