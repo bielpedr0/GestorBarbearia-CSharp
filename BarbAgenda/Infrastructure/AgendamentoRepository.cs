@@ -79,7 +79,10 @@ namespace BarbAgenda.Infrastructure
         public List<Agendamento> ObterAgendamentosPorDia(DateTime date)
         {            
             List<Agendamento> agendamentosDoDia = _barbAgendaDbContext.Agendamentos
-                .Where(a => a.DataAtendimento.Date == date)
+                .Where(agendamento => 
+                    agendamento.DataAtendimento.Year >= date.Year &&                    
+                    agendamento.DataAtendimento.Month >= date.Month &&                    
+                    agendamento.DataAtendimento.Day >= date.Day)
                 .Include(a => a.Cliente)
                 .Include(a => a.Servico)
                 .ToList();
@@ -90,9 +93,13 @@ namespace BarbAgenda.Infrastructure
         public List<Agendamento> ObterAgendamentoIntervaloData(DateTime dataInicial, DateTime dataFinal)
         {
             var agendamentos = _barbAgendaDbContext.Agendamentos
-                .Where(agendamento => 
-                    agendamento.DataAtendimento >= dataInicial && 
-                    agendamento.DataAtendimento <= dataFinal)
+                .Where(agendamento =>
+                    agendamento.DataAtendimento.Year >= dataInicial.Year &&
+                    agendamento.DataAtendimento.Year <= dataFinal.Year &&
+                    agendamento.DataAtendimento.Month >= dataInicial.Month &&
+                    agendamento.DataAtendimento.Month <= dataFinal.Month &&
+                    agendamento.DataAtendimento.Day >= dataFinal.Day &&
+                    agendamento.DataAtendimento.Day <= dataFinal.Day)
                 .Include(x => x.Cliente)
                 .Include(x => x.Servico)
                 .ToList();

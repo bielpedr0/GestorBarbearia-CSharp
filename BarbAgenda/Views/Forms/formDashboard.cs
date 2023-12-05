@@ -4,6 +4,7 @@ using BarbAgenda.Models;
 using BarbAgenda.Models.Exibicao;
 using System.Data;
 using System.Globalization;
+using System.Windows.Forms;
 
 namespace BarbAgenda.Views
 {
@@ -40,21 +41,24 @@ namespace BarbAgenda.Views
 
         private void btnGerarRelatorio_Click(object sender, EventArgs e)
         {
-            DateTime dataInicial;
-            DateTime dataFinal;
+            DateTime dataTimeInicial;
+            DateTime dateTimeFinal;
 
             // Array de formatos possíveis para a data
             string[] formatosData = { "dd/MM/yyyy" };
 
-            var dataInicialValida = DateTime.TryParseExact(maskedTextBoxDataInicial.Text, formatosData, CultureInfo.InvariantCulture, DateTimeStyles.None, out dataInicial);
-            var dataFinalValida = DateTime.TryParseExact(maskedTextBoxDataFinal.Text, formatosData, CultureInfo.InvariantCulture, DateTimeStyles.None, out dataFinal);
+            var dataInicialString = maskedTextBoxDataInicial.Text;
+            var dataFinalString = maskedTextBoxDataFinal.Text;
+
+            var dataInicialValida = DateTime.TryParseExact(dataInicialString, formatosData, CultureInfo.InvariantCulture, DateTimeStyles.None, out dataTimeInicial);
+            var dataFinalValida = DateTime.TryParseExact(dataFinalString, formatosData, CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTimeFinal);
 
             if (dataInicialValida == false || dataFinalValida == false)
             {
                 MessageBox.Show("Insira uma data válida para data inicial e data final");
             }            
 
-            var agendamentos = agendamentoRepository.ObterAgendamentoIntervaloData(dataInicial, dataFinal);
+            var agendamentos = agendamentoRepository.ObterAgendamentoIntervaloData(dataTimeInicial, dateTimeFinal);
 
             CarregarRelatorioNaGrid(agendamentos);
             DefinirPrecoTotal(agendamentos);
