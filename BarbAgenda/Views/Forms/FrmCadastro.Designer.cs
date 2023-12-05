@@ -49,6 +49,7 @@
             // 
             btnCadastrar.Cursor = Cursors.Hand;
             btnCadastrar.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCadastrar.ForeColor = Color.FromArgb(116, 86, 174);
             btnCadastrar.Location = new Point(38, 591);
             btnCadastrar.Margin = new Padding(3, 4, 3, 4);
             btnCadastrar.Name = "btnCadastrar";
@@ -63,6 +64,7 @@
             btnAtualizar.Cursor = Cursors.Hand;
             btnAtualizar.Enabled = false;
             btnAtualizar.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAtualizar.ForeColor = Color.FromArgb(116, 86, 174);
             btnAtualizar.Location = new Point(425, 591);
             btnAtualizar.Margin = new Padding(3, 4, 3, 4);
             btnAtualizar.Name = "btnAtualizar";
@@ -77,6 +79,7 @@
             btnExcluir.Cursor = Cursors.Hand;
             btnExcluir.Enabled = false;
             btnExcluir.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExcluir.ForeColor = Color.FromArgb(116, 86, 174);
             btnExcluir.Location = new Point(653, 591);
             btnExcluir.Margin = new Padding(3, 4, 3, 4);
             btnExcluir.Name = "btnExcluir";
@@ -90,6 +93,7 @@
             // 
             btnPesquisar.Cursor = Cursors.Hand;
             btnPesquisar.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPesquisar.ForeColor = Color.FromArgb(116, 86, 174);
             btnPesquisar.Location = new Point(221, 591);
             btnPesquisar.Margin = new Padding(3, 4, 3, 4);
             btnPesquisar.Name = "btnPesquisar";
@@ -138,9 +142,9 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = SystemColors.ActiveCaptionText;
+            label5.BackColor = SystemColors.Control;
             label5.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.FromArgb(116, 86, 174);
             label5.Location = new Point(363, 72);
             label5.Margin = new Padding(5, 0, 5, 0);
             label5.Name = "label5";
@@ -151,52 +155,52 @@
             // Cliente
             // 
             Cliente.AutoSize = true;
-            Cliente.BackColor = SystemColors.ActiveCaptionText;
-            Cliente.Font = new Font("MS UI Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Cliente.ForeColor = Color.White;
+            Cliente.BackColor = SystemColors.Control;
+            Cliente.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            Cliente.ForeColor = Color.Black;
             Cliente.Location = new Point(55, 256);
             Cliente.Margin = new Padding(5, 0, 5, 0);
             Cliente.Name = "Cliente";
-            Cliente.Size = new Size(160, 20);
+            Cliente.Size = new Size(188, 24);
             Cliente.TabIndex = 33;
             Cliente.Text = "Nome Completo:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = SystemColors.ActiveCaptionText;
-            label6.Font = new Font("MS UI Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
+            label6.BackColor = SystemColors.Control;
+            label6.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(55, 145);
             label6.Margin = new Padding(5, 0, 5, 0);
             label6.Name = "label6";
-            label6.Size = new Size(53, 20);
+            label6.Size = new Size(63, 24);
             label6.TabIndex = 34;
             label6.Text = "CPF:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.BackColor = SystemColors.ActiveCaptionText;
-            label7.Font = new Font("MS UI Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
+            label7.BackColor = SystemColors.Control;
+            label7.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
             label7.Location = new Point(51, 349);
             label7.Margin = new Padding(5, 0, 5, 0);
             label7.Name = "label7";
-            label7.Size = new Size(94, 20);
+            label7.Size = new Size(110, 24);
             label7.TabIndex = 35;
             label7.Text = "Telefone:";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.BackColor = SystemColors.ActiveCaptionText;
-            label8.Font = new Font("MS UI Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.White;
+            label8.BackColor = SystemColors.Control;
+            label8.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
             label8.Location = new Point(50, 465);
             label8.Margin = new Padding(5, 0, 5, 0);
             label8.Name = "label8";
-            label8.Size = new Size(63, 20);
+            label8.Size = new Size(74, 24);
             label8.TabIndex = 36;
             label8.Text = "Email:";
             // 
@@ -205,12 +209,12 @@
             gvFuncionarios.AllowUserToAddRows = false;
             gvFuncionarios.AllowUserToDeleteRows = false;
             gvFuncionarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gvFuncionarios.Location = new Point(369, 145);
+            gvFuncionarios.Location = new Point(335, 145);
             gvFuncionarios.Margin = new Padding(5);
             gvFuncionarios.Name = "gvFuncionarios";
             gvFuncionarios.ReadOnly = true;
             gvFuncionarios.RowHeadersWidth = 51;
-            gvFuncionarios.Size = new Size(618, 392);
+            gvFuncionarios.Size = new Size(552, 392);
             gvFuncionarios.TabIndex = 37;
             gvFuncionarios.CellClick += gvFuncionarios_CellClick;
             // 
@@ -218,6 +222,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(1029, 692);
             Controls.Add(gvFuncionarios);
             Controls.Add(label8);
@@ -233,6 +238,7 @@
             Controls.Add(btnExcluir);
             Controls.Add(btnAtualizar);
             Controls.Add(btnCadastrar);
+            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(5);
             Name = "FrmCadastro";

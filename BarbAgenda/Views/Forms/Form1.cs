@@ -38,7 +38,7 @@ namespace BarbAgenda.Views
                 formHome.Activate();
             }
         }
-        bool menuExpande = true;    
+        bool menuExpande = true;
 
         private void menuTransition_Tick(object sender, EventArgs e)
         {
@@ -54,7 +54,8 @@ namespace BarbAgenda.Views
                     panelDashboard.Width = menu.Width;
                     panelCalendar.Width = menu.Width;
                 }
-            }else
+            }
+            else
             {
                 menu.Width += 10;
                 if (menu.Width >= 180)
@@ -68,7 +69,7 @@ namespace BarbAgenda.Views
 
                 }
             }
-            
+
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -141,7 +142,7 @@ namespace BarbAgenda.Views
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-            
+
             if (FrmCadastro == null)
             {
                 FrmCadastro = new FrmCadastro(_barbAgendaDbContext);

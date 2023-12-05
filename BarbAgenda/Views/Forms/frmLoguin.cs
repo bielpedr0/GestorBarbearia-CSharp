@@ -18,7 +18,7 @@ namespace BarbAgenda.Views
             userRepository = new UserRepository(barbAgendaDbContext);
         }
 
-        MySqlConnection con = new MySqlConnection(@"server=localhost;port=3306;uid=root;pwd=834483Ti;database=barbagenda");
+        MySqlConnection con = new MySqlConnection(@"server=localhost;port=3306;uid=root;pwd=159482;database=barb-calendario");
         MySqlCommand cmd = new MySqlCommand();
         MySqlDataAdapter da = new MySqlDataAdapter();
 
@@ -28,21 +28,22 @@ namespace BarbAgenda.Views
 
             if (!usuarioPossuiLogin)
             {
-                MessageBox.Show("Invalid Username or Password, Please Try again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtPassword.Text = "";
-                txtUsername.Text = "";
+                MessageBox.Show("Invalid Username or Password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ClearTextBox();
                 txtUsername.Focus();
                 con.Close();
             }
-
-            // Cria um novo objeto ArmazenaInfo e preenche com os detalhes do login
-            armazenaInfo = new ArmazenaInfo();
-            armazenaInfo.SetNick(txtUsername.Text);
-            // Abre o Form1 e passa o objeto armazenaInfo
-            this.Hide();
-            Form1 form1 = new Form1(_barbAgendaDbContext, armazenaInfo);
-            form1.ShowDialog();
-            this.Close();
+            else
+            {
+                // Cria um novo objeto ArmazenaInfo e preenche com os detalhes do login
+                armazenaInfo = new ArmazenaInfo();
+                armazenaInfo.SetNick(txtUsername.Text);
+                // Abre o Form1 e passa o objeto armazenaInfo apenas se o login for bem-sucedido
+                this.Hide();
+                Form1 form1 = new Form1(_barbAgendaDbContext, armazenaInfo);
+                form1.ShowDialog();
+                this.Close();
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -57,7 +58,7 @@ namespace BarbAgenda.Views
             if (checkBxShowPass.Checked)
             {
                 txtPassword.PasswordChar = '\0';
-                
+
             }
             else
             {
@@ -71,12 +72,24 @@ namespace BarbAgenda.Views
             frmCreateAccount frmCreateAccount = new frmCreateAccount(_barbAgendaDbContext, userRepository);
             frmCreateAccount.ShowDialog();
             this.Close();
-           
+
+        }
+
+        private void ClearTextBox()
+        {
+            txtPassword.Clear();
+            txtUsername.Clear();    
         }
 
         private void frmLoguin_Load(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

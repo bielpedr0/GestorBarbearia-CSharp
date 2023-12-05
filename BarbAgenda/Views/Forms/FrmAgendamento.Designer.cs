@@ -28,248 +28,244 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.formularioImg = new System.Windows.Forms.PictureBox();
-            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBoxServico = new System.Windows.Forms.ComboBox();
-            this.mySqlCommand2 = new MySql.Data.MySqlClient.MySqlCommand();
-            this.txbValor = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAgendar = new System.Windows.Forms.Button();
-            this.Cliente = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.maskedTextBoxData = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBoxTime = new System.Windows.Forms.MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.formularioImg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            formularioImg = new PictureBox();
+            mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            dataGridView1 = new DataGridView();
+            comboBoxServico = new ComboBox();
+            mySqlCommand2 = new MySql.Data.MySqlClient.MySqlCommand();
+            txbValor = new TextBox();
+            label1 = new Label();
+            btnAgendar = new Button();
+            Cliente = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            comboBoxCliente = new ComboBox();
+            btnExcluir = new Button();
+            maskedTextBoxData = new MaskedTextBox();
+            maskedTextBoxTime = new MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)formularioImg).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // formularioImg
             // 
-            this.formularioImg.Location = new System.Drawing.Point(14, -29);
-            this.formularioImg.Margin = new System.Windows.Forms.Padding(4);
-            this.formularioImg.Name = "formularioImg";
-            this.formularioImg.Size = new System.Drawing.Size(718, 607);
-            this.formularioImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.formularioImg.TabIndex = 2;
-            this.formularioImg.TabStop = false;
+            formularioImg.Location = new Point(16, -39);
+            formularioImg.Margin = new Padding(5);
+            formularioImg.Name = "formularioImg";
+            formularioImg.Size = new Size(821, 809);
+            formularioImg.SizeMode = PictureBoxSizeMode.StretchImage;
+            formularioImg.TabIndex = 2;
+            formularioImg.TabStop = false;
             // 
             // mySqlCommand1
             // 
-            this.mySqlCommand1.CacheAge = 0;
-            this.mySqlCommand1.Connection = null;
-            this.mySqlCommand1.EnableCaching = false;
-            this.mySqlCommand1.Transaction = null;
+            mySqlCommand1.CacheAge = 0;
+            mySqlCommand1.Connection = null;
+            mySqlCommand1.EnableCaching = false;
+            mySqlCommand1.Transaction = null;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 322);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(562, 173);
-            this.dataGridView1.TabIndex = 4;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(117, 428);
+            dataGridView1.Margin = new Padding(5);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(642, 231);
+            dataGridView1.TabIndex = 4;
             // 
             // comboBoxServico
             // 
-            this.comboBoxServico.FormattingEnabled = true;
-            this.comboBoxServico.Items.AddRange(new object[] {
-            "Corte",
-            "Barba",
-            "Sobrancelha",
-            "Corte + barba",
-            "Corte + Sobrancelha",
-            "Completo"});
-            this.comboBoxServico.Location = new System.Drawing.Point(195, 148);
-            this.comboBoxServico.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxServico.Name = "comboBoxServico";
-            this.comboBoxServico.Size = new System.Drawing.Size(140, 23);
-            this.comboBoxServico.TabIndex = 5;
+            comboBoxServico.FormattingEnabled = true;
+            comboBoxServico.Items.AddRange(new object[] { "Corte", "Barba", "Sobrancelha", "Corte + barba", "Corte + Sobrancelha", "Completo" });
+            comboBoxServico.Location = new Point(223, 197);
+            comboBoxServico.Margin = new Padding(5);
+            comboBoxServico.Name = "comboBoxServico";
+            comboBoxServico.Size = new Size(159, 28);
+            comboBoxServico.TabIndex = 5;
             // 
             // mySqlCommand2
             // 
-            this.mySqlCommand2.CacheAge = 0;
-            this.mySqlCommand2.Connection = null;
-            this.mySqlCommand2.EnableCaching = false;
-            this.mySqlCommand2.Transaction = null;
+            mySqlCommand2.CacheAge = 0;
+            mySqlCommand2.Connection = null;
+            mySqlCommand2.EnableCaching = false;
+            mySqlCommand2.Transaction = null;
             // 
             // txbValor
             // 
-            this.txbValor.Enabled = false;
-            this.txbValor.Location = new System.Drawing.Point(195, 192);
-            this.txbValor.Margin = new System.Windows.Forms.Padding(4);
-            this.txbValor.Name = "txbValor";
-            this.txbValor.Size = new System.Drawing.Size(140, 23);
-            this.txbValor.TabIndex = 7;
+            txbValor.Enabled = false;
+            txbValor.Location = new Point(223, 256);
+            txbValor.Margin = new Padding(5);
+            txbValor.Name = "txbValor";
+            txbValor.Size = new Size(159, 27);
+            txbValor.TabIndex = 7;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(297, 53);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 27);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Agenda";
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.Control;
+            label1.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(116, 86, 174);
+            label1.Location = new Point(356, 49);
+            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(126, 34);
+            label1.TabIndex = 9;
+            label1.Text = "Agenda";
             // 
             // btnAgendar
             // 
-            this.btnAgendar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAgendar.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAgendar.Location = new System.Drawing.Point(396, 106);
-            this.btnAgendar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgendar.Name = "btnAgendar";
-            this.btnAgendar.Size = new System.Drawing.Size(209, 65);
-            this.btnAgendar.TabIndex = 10;
-            this.btnAgendar.Text = "Agendar";
-            this.btnAgendar.UseVisualStyleBackColor = false;
-            this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
+            btnAgendar.BackColor = Color.White;
+            btnAgendar.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAgendar.ForeColor = Color.FromArgb(116, 86, 174);
+            btnAgendar.Location = new Point(453, 141);
+            btnAgendar.Margin = new Padding(5);
+            btnAgendar.Name = "btnAgendar";
+            btnAgendar.Size = new Size(239, 87);
+            btnAgendar.TabIndex = 10;
+            btnAgendar.Text = "Agendar";
+            btnAgendar.UseVisualStyleBackColor = false;
+            btnAgendar.Click += btnAgendar_Click;
             // 
             // Cliente
             // 
-            this.Cliente.AutoSize = true;
-            this.Cliente.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Cliente.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Cliente.ForeColor = System.Drawing.Color.White;
-            this.Cliente.Location = new System.Drawing.Point(84, 106);
-            this.Cliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Cliente.Name = "Cliente";
-            this.Cliente.Size = new System.Drawing.Size(65, 16);
-            this.Cliente.TabIndex = 11;
-            this.Cliente.Text = "Cliente:";
+            Cliente.AutoSize = true;
+            Cliente.BackColor = SystemColors.Control;
+            Cliente.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            Cliente.ForeColor = Color.Black;
+            Cliente.Location = new Point(117, 145);
+            Cliente.Margin = new Padding(5, 0, 5, 0);
+            Cliente.Name = "Cliente";
+            Cliente.Size = new Size(93, 24);
+            Cliente.TabIndex = 11;
+            Cliente.Text = "Cliente:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(84, 152);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 16);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Serviço:";
+            label3.AutoSize = true;
+            label3.BackColor = SystemColors.Control;
+            label3.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(120, 201);
+            label3.Margin = new Padding(5, 0, 5, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(97, 24);
+            label3.TabIndex = 16;
+            label3.Text = "Serviço:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(84, 194);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 16);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Valor R$:";
+            label4.AutoSize = true;
+            label4.BackColor = SystemColors.Control;
+            label4.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(117, 259);
+            label4.Margin = new Padding(5, 0, 5, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(109, 24);
+            label4.TabIndex = 17;
+            label4.Text = "Valor R$:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(84, 236);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 16);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Data:";
+            label5.AutoSize = true;
+            label5.BackColor = SystemColors.Control;
+            label5.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(120, 318);
+            label5.Margin = new Padding(5, 0, 5, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(66, 24);
+            label5.TabIndex = 18;
+            label5.Text = "Data:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(84, 279);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 16);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Horário:";
+            label6.AutoSize = true;
+            label6.BackColor = SystemColors.Control;
+            label6.Font = new Font("MS UI Gothic", 14.15F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(120, 366);
+            label6.Margin = new Padding(5, 0, 5, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(94, 24);
+            label6.TabIndex = 19;
+            label6.Text = "Horário:";
             // 
             // comboBoxCliente
             // 
-            this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(195, 106);
-            this.comboBoxCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxCliente.Name = "comboBoxCliente";
-            this.comboBoxCliente.Size = new System.Drawing.Size(140, 23);
-            this.comboBoxCliente.TabIndex = 20;
+            comboBoxCliente.FormattingEnabled = true;
+            comboBoxCliente.Location = new Point(223, 141);
+            comboBoxCliente.Margin = new Padding(5);
+            comboBoxCliente.Name = "comboBoxCliente";
+            comboBoxCliente.Size = new Size(159, 28);
+            comboBoxCliente.TabIndex = 20;
             // 
             // btnExcluir
             // 
-            this.btnExcluir.BackColor = System.Drawing.SystemColors.Control;
-            this.btnExcluir.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExcluir.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnExcluir.Location = new System.Drawing.Point(485, 278);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(120, 35);
-            this.btnExcluir.TabIndex = 21;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            btnExcluir.BackColor = SystemColors.Control;
+            btnExcluir.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExcluir.ForeColor = SystemColors.Desktop;
+            btnExcluir.Location = new Point(622, 372);
+            btnExcluir.Margin = new Padding(5);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.Size = new Size(137, 47);
+            btnExcluir.TabIndex = 21;
+            btnExcluir.Text = "Excluir";
+            btnExcluir.UseVisualStyleBackColor = false;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // maskedTextBoxData
             // 
-            this.maskedTextBoxData.Location = new System.Drawing.Point(195, 236);
-            this.maskedTextBoxData.Name = "maskedTextBoxData";
-            this.maskedTextBoxData.Size = new System.Drawing.Size(140, 23);
-            this.maskedTextBoxData.TabIndex = 22;
+            maskedTextBoxData.Location = new Point(223, 315);
+            maskedTextBoxData.Margin = new Padding(3, 4, 3, 4);
+            maskedTextBoxData.Name = "maskedTextBoxData";
+            maskedTextBoxData.Size = new Size(159, 27);
+            maskedTextBoxData.TabIndex = 22;
             // 
             // maskedTextBoxTime
             // 
-            this.maskedTextBoxTime.Location = new System.Drawing.Point(195, 278);
-            this.maskedTextBoxTime.Name = "maskedTextBoxTime";
-            this.maskedTextBoxTime.Size = new System.Drawing.Size(140, 23);
-            this.maskedTextBoxTime.TabIndex = 23;
+            maskedTextBoxTime.Location = new Point(223, 363);
+            maskedTextBoxTime.Margin = new Padding(3, 4, 3, 4);
+            maskedTextBoxTime.Name = "maskedTextBoxTime";
+            maskedTextBoxTime.Size = new Size(159, 27);
+            maskedTextBoxTime.TabIndex = 23;
             // 
             // FrmAgendamento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(896, 519);
-            this.Controls.Add(this.maskedTextBoxTime);
-            this.Controls.Add(this.maskedTextBoxData);
-            this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(this.comboBoxCliente);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Cliente);
-            this.Controls.Add(this.btnAgendar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txbValor);
-            this.Controls.Add(this.comboBoxServico);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.formularioImg);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FrmAgendamento";
-            this.Text = "FrmAgendamento";
-            this.Load += FrmAgendamento_Load;
-            ((System.ComponentModel.ISupportInitialize)(this.formularioImg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1024, 692);
+            Controls.Add(maskedTextBoxTime);
+            Controls.Add(maskedTextBoxData);
+            Controls.Add(btnExcluir);
+            Controls.Add(comboBoxCliente);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(Cliente);
+            Controls.Add(btnAgendar);
+            Controls.Add(label1);
+            Controls.Add(txbValor);
+            Controls.Add(comboBoxServico);
+            Controls.Add(dataGridView1);
+            Controls.Add(formularioImg);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(5);
+            Name = "FrmAgendamento";
+            Text = "FrmAgendamento";
+            Load += FrmAgendamento_Load;
+            ((System.ComponentModel.ISupportInitialize)formularioImg).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

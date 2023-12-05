@@ -14,7 +14,7 @@ namespace BarbAgenda.Views
         private readonly ClienteRepository clienteRepository;
         private readonly ServicoRepository servicoRepository;
         private readonly AgendamentoRepository agendamentoRepository;
-        
+
         public formDashboard(BarbAgendaDbContext barbAgendaDbContext)
         {
             InitializeComponent();
@@ -23,12 +23,12 @@ namespace BarbAgenda.Views
             clienteRepository = new ClienteRepository(barbAgendaDbContext);
             servicoRepository = new ServicoRepository(barbAgendaDbContext);
             agendamentoRepository = new AgendamentoRepository(barbAgendaDbContext, clienteRepository, servicoRepository);
-        }        
+        }
 
         private void formDashboard_Load(object sender, EventArgs e)
         {
             this.ControlBox = false;
-        }        
+        }
 
         private void ConfiguracaoMascaraCampos()
         {
@@ -36,7 +36,7 @@ namespace BarbAgenda.Views
             maskedTextBoxDataInicial.Mask = "00/00/0000"; // Defina a máscara desejada
             maskedTextBoxDataInicial.ValidatingType = typeof(System.DateTime);
             maskedTextBoxDataFinal.Mask = "00/00/0000"; // Defina a máscara desejada
-            maskedTextBoxDataFinal.ValidatingType = typeof(System.DateTime);            
+            maskedTextBoxDataFinal.ValidatingType = typeof(System.DateTime);
         }
 
         private void btnGerarRelatorio_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace BarbAgenda.Views
             if (dataInicialValida == false || dataFinalValida == false)
             {
                 MessageBox.Show("Insira uma data válida para data inicial e data final");
-            }            
+            }
 
             var agendamentos = agendamentoRepository.ObterAgendamentoIntervaloData(dataTimeInicial, dateTimeFinal);
 

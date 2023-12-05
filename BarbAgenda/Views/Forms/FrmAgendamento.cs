@@ -211,6 +211,6 @@ namespace BarbAgenda.Views
             {
                 MessageBox.Show("Selecione um agendamento para excluir.");
             }
-        }        
+        }
     }
 }
